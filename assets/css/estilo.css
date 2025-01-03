@@ -102,7 +102,7 @@ img{
 body {
     margin: 5%;
     background-color: #f0f1f2;
-    font-family: Courier, monospace;
+    font-family: Arial, monospace;
     color: #496B60;
 	padding-bottom: 60px; /* Adiciona um espaço para o rodapé */
 
@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p{
-	font-family: Courier, monospace;
+	font-family: Arial, monospace;
     color: #496B60;
 	font-size: 18px;
 
@@ -135,7 +135,9 @@ footer {
     flex-wrap: wrap; /* Permite quebrar linha */
     justify-content: space-between; /* Distribui o espaço entre os itens */
     gap: 20px; /* Espaçamento entre os produtos */
+
 }
+
 
 .centradiv .moldura h2{
     width: 100%; /* Ocupa toda a largura disponível */
@@ -156,6 +158,7 @@ footer {
 .moldura {
     position: relative;
     width: 30%; /* Largura da moldura */
+    margin-left: 60%;
     display: inline-block; /* Garante que o hover seja aplicado apenas ao tamanho da moldura */
     overflow: hidden; /* Garante que o conteúdo da moldura não ultrapasse os limites arredondados */
     border-radius: 5px; /* Bordas arredondadas na moldura */
@@ -173,12 +176,10 @@ footer {
     background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
     color: white;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: italic;
     z-index: 1; /* Garante que o título fique acima da imagem */
 }
-.moldura h3:hover{
 
-}
 
 .moldura:hover {
     opacity: 1; /* Aumenta o tamanho da moldura ao passar o mouse */
@@ -215,7 +216,7 @@ footer {
 
 /* Estilo do Texto dentro do Overlay */
 .texto {
-    color: black;
+    color: ;
     font-size: 20px;
     font-family: courier;
     position: absolute;
@@ -231,6 +232,7 @@ footer {
     width: 100%; /* Garante que o título ocupe 100% da largura da centradiv */
     max-width: 30%; /* Alinha com a largura máxima da moldura */
     margin-top: 20px; /* Adiciona um espaço acima do título */
+    margin-left: 60%;
     font-size: 20px;
     font-weight: bold;
     text-align: ; /* Centraliza o texto */
@@ -505,7 +507,7 @@ footer {
     .moldura {
         width: 70%; /* Ajuste o valor para algo menor que 100%, como 70% */
         padding: 0; /* Remove qualquer padding extra */
-        margin-left: center; /* Alinha a moldura ao centro, se necessário */
+        margin-left: ; /* Alinha a moldura ao centro, se necessário */
     }
 
     .imagem {
