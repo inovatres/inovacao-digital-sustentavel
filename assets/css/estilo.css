@@ -136,6 +136,7 @@ footer {
     justify-content: center; /* Centraliza os itens horizontalmente */
     flex-wrap: wrap; /* Permite que os itens se reorganizem quando necessário */
     gap: 10px; /* Espaçamento entre os itens */
+    text-align: center; /* Centraliza o texto dentro da div */
 }
 
 /* Estilos da Moldura */
@@ -161,6 +162,9 @@ footer {
     font-size: 18px;
     font-weight: bold;
     z-index: 1; /* Garante que o título fique acima da imagem */
+}
+.moldura h3:hover{
+
 }
 
 .moldura:hover {
@@ -209,7 +213,15 @@ footer {
     pointer-events: none; /* Garante que o texto não interfira no hover da moldura */
 
 }
-
+/* Estilo do título H3 Fora da Moldura */
+.centradiv h2, h3{
+    width: 100%; /* Garante que o título ocupe 100% da largura da centradiv */
+    max-width: 30%; /* Alinha com a largura máxima da moldura */
+    margin-top: 20px; /* Adiciona um espaço acima do título */
+    font-size: 20px;
+    font-weight: bold;
+    text-align: ; /* Centraliza o texto */
+}
 
 .botaoEmail a {
 	text-decoration: none; /* Remove o sublinhado */
