@@ -130,13 +130,29 @@ footer {
 }
 
 }
-/* Centraliza o conteúdo de forma flexível */
 .centradiv {
+    background:#ff5865;
+    border-radius: 10px;
     display: flex;
-    justify-content: center; /* Centraliza os itens horizontalmente */
-    flex-wrap: wrap; /* Permite que os itens se reorganizem quando necessário */
-    gap: 10px; /* Espaçamento entre os itens */
-    text-align: center; /* Centraliza o texto dentro da div */
+    flex-wrap: wrap; /* Permite que os itens "quebrem" para a próxima linha */
+    justify-content: center; /* Centraliza os produtos na tela */
+    gap: 20px; /* Espaço entre os produtos */
+}
+
+
+.centradiv .moldura h2{
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 90%; /* Define uma largura máxima para o texto */
+    margin: 10px 0; /* Adiciona espaçamento entre os elementos */
+    text-align: center; /* Garante centralização do texto */
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+}
+.centradiv .moldura h3 {
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 90%; /* Define uma largura máxima para o texto */
+    margin: 10px 0; /* Adiciona espaçamento entre os elementos */
+    text-align: center; /* Garante centralização do texto */
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte */
 }
 
 /* Estilos da Moldura */
@@ -337,7 +353,7 @@ footer {
 }
 
 	.texto {
-        font-size: 18px; /* Reduz o tamanho do texto em dispositivos móveis */
+        font-size: 20px; /* Reduz o tamanho do texto em dispositivos móveis */
 
     }
 }
@@ -466,13 +482,50 @@ footer {
     }
     .moldura {
         width: 75%; /* Moldura ocupa 75% da largura em telas pequenas */
-        margin-left: 15%; /*Coloca a moldura com espaçamento à esquerda de 30% em relação ao tamanho da tela*/
+        margin-left: 15%; /*Coloca a moldura com espaçamento à esquerda de 15% em relação ao tamanho da tela*/
         margin-right: %;
+
+    }
+    .moldura h2 {
+        font-weight: bold;
+        font-size: 25px; /* Tamanho do título menor em telas pequenas */
+
     }
     .moldura h3 {
-        font-size: 16px; /* Tamanho do título menor em telas pequenas */
+        font-size: 20px; /* Tamanho do título menor em telas pequenas */
+
     }
     .texto {
         font-size: 18px; /* Tamanho do texto menor em telas pequenas */
     }
+    .centradiv h2, .centradiv h3 {
+        margin-left: 20%;
+
+        max-width: 75%;
+        font-size: 1rem; /* Reduz um pouco o tamanho da fonte */
+
+    }
+    .centradiv {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens "quebrem" para a próxima linha */
+    justify-content: center; /* Centraliza os produtos na tela */
+    gap: 50%; /* Espaço entre os produtos */
+}
+
+
+.centradiv .moldura h2{
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 90%; /* Define uma largura máxima para o texto */
+    margin: 10px 0; /* Adiciona espaçamento entre os elementos */
+    text-align: center; /* Garante centralização do texto */
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+
+}
+.centradiv .moldura h3 {
+    width: 100%; /* Ocupa toda a largura disponível */
+    max-width: 90%; /* Define uma largura máxima para o texto */
+    margin: 10px 0; /* Adiciona espaçamento entre os elementos */
+    text-align: center; /* Garante centralização do texto */
+    font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+}
 }
