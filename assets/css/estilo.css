@@ -131,14 +131,11 @@ footer {
 
 }
 .centradiv {
-    background:#ff5865;
-    border-radius: 10px;
     display: flex;
-    flex-wrap: wrap; /* Permite que os itens "quebrem" para a próxima linha */
-    justify-content: center; /* Centraliza os produtos na tela */
-    gap: 20px; /* Espaço entre os produtos */
+    flex-wrap: wrap; /* Permite quebrar linha */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    gap: 20px; /* Espaçamento entre os produtos */
 }
-
 
 .centradiv .moldura h2{
     width: 100%; /* Ocupa toda a largura disponível */
@@ -505,27 +502,5 @@ footer {
         font-size: 1rem; /* Reduz um pouco o tamanho da fonte */
 
     }
-    .centradiv {
-    display: flex;
-    flex-wrap: wrap; /* Permite que os itens "quebrem" para a próxima linha */
-    justify-content: center; /* Centraliza os produtos na tela */
-    gap: 50%; /* Espaço entre os produtos */
-}
 
-
-.centradiv .moldura h2{
-    width: 100%; /* Ocupa toda a largura disponível */
-    max-width: 90%; /* Define uma largura máxima para o texto */
-    margin: 10px 0; /* Adiciona espaçamento entre os elementos */
-    text-align: center; /* Garante centralização do texto */
-    font-size: 1.2rem; /* Ajusta o tamanho da fonte */
-
-}
-.centradiv .moldura h3 {
-    width: 100%; /* Ocupa toda a largura disponível */
-    max-width: 90%; /* Define uma largura máxima para o texto */
-    margin: 10px 0; /* Adiciona espaçamento entre os elementos */
-    text-align: center; /* Garante centralização do texto */
-    font-size: 1.2rem; /* Ajusta o tamanho da fonte */
-}
 }
