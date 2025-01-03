@@ -110,7 +110,7 @@ body {
 }
 
 /* Estilo do título */
-h1, h2 {
+h1, h2, h3, h4, h5, h6 {
     color: #496B60;
 }
 
@@ -147,6 +147,20 @@ footer {
     border-radius: 5px; /* Bordas arredondadas na moldura */
     transition: transform 0.3s ease; /* Efeito de transição suave */
 
+}
+
+.moldura h3 {
+    position: absolute;
+    top: 0; /* Coloca o título no topo da moldura */
+    left: 0;
+    right: 0;
+    padding: 10px; /* Adiciona um pouco de espaçamento */
+    margin: 0;
+    background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 1; /* Garante que o título fique acima da imagem */
 }
 
 .moldura:hover {
@@ -439,5 +453,16 @@ footer {
 @media (max-width: 768px) {
     .device {
         transform: scale(0.6);
+    }
+    .moldura {
+        width: 75%; /* Moldura ocupa 75% da largura em telas pequenas */
+        margin-left: 15%; /*Coloca a moldura com espaçamento à esquerda de 30% em relação ao tamanho da tela*/
+        margin-right: %;
+    }
+    .moldura h3 {
+        font-size: 16px; /* Tamanho do título menor em telas pequenas */
+    }
+    .texto {
+        font-size: 18px; /* Tamanho do texto menor em telas pequenas */
     }
 }
