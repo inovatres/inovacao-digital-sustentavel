@@ -103,6 +103,7 @@ body {
     margin: 5%;
     background-color: #f0f1f2;
     font-family: Arial, monospace;
+
     color: #496B60;
 	padding-bottom: 60px; /* Adiciona um espaço para o rodapé */
 
@@ -112,6 +113,7 @@ body {
 /* Estilo do título */
 h1, h2, h3, h4, h5, h6 {
     color: #496B60;
+
 }
 
 p{
@@ -120,6 +122,12 @@ p{
 	font-size: 18px;
 
 }
+div h1 h2 h3 h4 h5 h6{
+    line-height: 1.5; /*espaço entre a quebra de linha nos textos dentro de divs*/
+
+
+}
+
 footer {
     position: absolute;
     bottom: 20px;
@@ -133,7 +141,6 @@ footer {
 .centradiv {
     display: flex;
     flex-wrap: wrap; /* Permite quebrar linha */
-
     justify-content: space-between; /* Distribui o espaço entre os itens */
     gap: 20px; /* Espaçamento entre os produtos */
 
@@ -146,6 +153,8 @@ footer {
     margin: 10px 0; /* Adiciona espaçamento entre os elementos */
     text-align: center; /* Garante centralização do texto */
     font-size: 1.2rem; /* Ajusta o tamanho da fonte */
+
+
 }
 .centradiv .moldura h3 {
     width: 100%; /* Ocupa toda a largura disponível */
@@ -229,14 +238,27 @@ footer {
 
 }
 /* Estilo do título H3 Fora da Moldura */
-.centradiv h2, h3{
-    width: 100%; /* Garante que o título ocupe 100% da largura da centradiv */
-    max-width: 30%; /* Alinha com a largura máxima da moldura */
-    margin-top: 20px; /* Adiciona um espaço acima do título */
-    margin-left: 60%;
-    font-size: 20px;
+.centradiv h2 {
+    width: 100%; /* Garante que o título ocupe 100% da largura disponível */
+    max-width: 30%; /* Define uma largura máxima */
+    margin: 20px 0 10px; /* Adiciona margem superior de 20px e inferior de 10px */
+    margin-left: 60%; /* Ajusta o alinhamento horizontal, caso necessário */
+    font-size: 25px;
     font-weight: bold;
     text-align: ; /* Centraliza o texto */
+    margin-bottom: 1.5; /* Espaço inferior para ajustar a distância do próximo elemento */
+}
+
+.centradiv h3 {
+    width: 100%; /* Garante que o título ocupe 100% da largura disponível */
+    max-width: 30%; /* Define uma largura máxima */
+    margin: 10px 0 20px; /* Adiciona margem superior de 10px e inferior de 20px */
+    margin-left: 60%; /* Ajusta o alinhamento horizontal, caso necessário */
+    font-size: 20px;
+    font-weight:normal; /*expessura da fonte*/
+    font-style: italic; /*estilo da fonte*/
+    text-align: ; /* Centraliza o texto */
+    margin-top: 1.5; /* Espaço superior para ajustar a distância do elemento anterior */
 }
 
 .botaoEmail a {
@@ -289,7 +311,7 @@ footer {
 	opacity: 0.4; /* Define a opacidade para 40% */
 }
 
-/* *************MOBILE*************** */
+/* *************    M O B I L E            *************** */
 @media (max-width: 768px) {
     .device {
         transform: scale(0.6);
@@ -351,16 +373,14 @@ footer {
 }
 
 	.texto {
-        font-size: 20px; /* Reduz o tamanho do texto em dispositivos móveis */
+        font-size: 1.5rem; /* Reduz o tamanho do texto em dispositivos móveis */
 
     }
 
     .moldura {
-        width: 70%; /* Moldura ocupa 75% da largura em telas pequenas */
-        margin-left: 15%; /*Coloca a moldura com espaçamento à esquerda de 15% em relação ao tamanho da tela*/
-        margin-right: 5%;
-        padding: 0; /* Remove qualquer padding extra */
 
+        margin-left: 15%; /* Espaçamento à esquerda */
+        margin-right: 5%;
 
     }
     .moldura h2 {
@@ -369,23 +389,21 @@ footer {
 
     }
     .moldura h3 {
-        font-size: 20px; /* Tamanho do título menor em telas pequenas */
+        font-size: 1.5rem; /* Tamanho do título menor em telas pequenas */
 
     }
-    .texto {
-        font-size: 18px; /* Tamanho do texto menor em telas pequenas */
-    }
+
     .centradiv {
         display: flex;
         flex-direction: column; /* Organiza os itens na vertical (coluna) */
         align-items: center; /* Centraliza os itens horizontalmente */
-        gap: 20px; /* Espaçamento entre os itens */
+        gap: 5%; /* Espaçamento entre os itens */
     }
     .centradiv h2, .centradiv h3 {
         margin-left: 20%;
-
         max-width: 80%;
         font-size: 1rem; /* Reduz um pouco o tamanho da fonte */
+
 
     }
 
@@ -393,7 +411,9 @@ footer {
         width: 100%; /* A imagem ocupa toda a largura da moldura */
         height: auto; /* Altura proporcional à largura */
         border-radius: 5px; /* Mantém as bordas arredondadas */
+        display: block;
     }
+
 }
 
 /*    IPAD    */
@@ -466,7 +486,7 @@ footer {
     }
 }
 
-/*    TESTE RESPONSIVO   */
+/*  ************  TESTE RESPONSIVO pag simulador ************ */
 /* Estilos Gerais dos Dispositivos */
 .device {
     border: 2px solid #333;
@@ -491,7 +511,7 @@ footer {
     border: none;
 }
 
-/* Simulação de Dispositivos */
+/*************** Simulação de Dispositivos ********************* */
 .phone {
     width: 375px; /* Largura padrão do iPhone 12 */
     height: 812px; /* Altura padrão do iPhone 12 */
