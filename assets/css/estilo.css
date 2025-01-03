@@ -133,6 +133,7 @@ footer {
 .centradiv {
     display: flex;
     flex-wrap: wrap; /* Permite quebrar linha */
+
     justify-content: space-between; /* Distribui o espaço entre os itens */
     gap: 20px; /* Espaçamento entre os produtos */
 
@@ -289,11 +290,9 @@ footer {
 }
 
 /* *************MOBILE*************** */
-
 @media (max-width: 768px) {
-    .moldura {
-        width: 80%;  /* Moldura ocupa 80% da largura da tela */
-        padding: 40px 20px;  /* Reduz o padding em telas menores */
+    .device {
+        transform: scale(0.6);
     }
     .menu a {
 		margin-left: 40%;
@@ -354,6 +353,46 @@ footer {
 	.texto {
         font-size: 20px; /* Reduz o tamanho do texto em dispositivos móveis */
 
+    }
+
+    .moldura {
+        width: 70%; /* Moldura ocupa 75% da largura em telas pequenas */
+        margin-left: 15%; /*Coloca a moldura com espaçamento à esquerda de 15% em relação ao tamanho da tela*/
+        margin-right: 5%;
+        padding: 0; /* Remove qualquer padding extra */
+
+
+    }
+    .moldura h2 {
+        font-weight: bold;
+        font-size: 25px; /* Tamanho do título menor em telas pequenas */
+
+    }
+    .moldura h3 {
+        font-size: 20px; /* Tamanho do título menor em telas pequenas */
+
+    }
+    .texto {
+        font-size: 18px; /* Tamanho do texto menor em telas pequenas */
+    }
+    .centradiv {
+        display: flex;
+        flex-direction: column; /* Organiza os itens na vertical (coluna) */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        gap: 20px; /* Espaçamento entre os itens */
+    }
+    .centradiv h2, .centradiv h3 {
+        margin-left: 20%;
+
+        max-width: 80%;
+        font-size: 1rem; /* Reduz um pouco o tamanho da fonte */
+
+    }
+
+    .imagem {
+        width: 100%; /* A imagem ocupa toda a largura da moldura */
+        height: auto; /* Altura proporcional à largura */
+        border-radius: 5px; /* Mantém as bordas arredondadas */
     }
 }
 
@@ -475,44 +514,5 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
-    .device {
-        transform: scale(0.6);
-    }
-    .moldura {
-        width: ; /* Moldura ocupa 75% da largura em telas pequenas */
-        margin-left: 30%; /*Coloca a moldura com espaçamento à esquerda de 15% em relação ao tamanho da tela*/
-        margin-right: %;
 
-    }
-    .moldura h2 {
-        font-weight: bold;
-        font-size: 25px; /* Tamanho do título menor em telas pequenas */
-
-    }
-    .moldura h3 {
-        font-size: 20px; /* Tamanho do título menor em telas pequenas */
-
-    }
-    .texto {
-        font-size: 18px; /* Tamanho do texto menor em telas pequenas */
-    }
-    .centradiv h2, .centradiv h3 {
-        margin-left: 30%;
-
-        max-width: 60%;
-        font-size: 1rem; /* Reduz um pouco o tamanho da fonte */
-
-    }
-    .moldura {
-        width: 70%; /* Ajuste o valor para algo menor que 100%, como 70% */
-        padding: 0; /* Remove qualquer padding extra */
-        margin-left: ; /* Alinha a moldura ao centro, se necessário */
-    }
-
-    .imagem {
-        width: 100%; /* A imagem ocupa toda a largura da moldura */
-        height: auto; /* Altura proporcional à largura */
-        border-radius: 5px; /* Mantém as bordas arredondadas */
-    }
 }
