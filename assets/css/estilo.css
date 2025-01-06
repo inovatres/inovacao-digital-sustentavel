@@ -30,8 +30,8 @@ html {
 /*imagem do logo*/
 #logo img{
     width: 10%;
+	margin: 0;
 }
-
 
 /* Estilos para o cabeçalho e navegação */
 header {
@@ -233,22 +233,13 @@ img {
         padding: 10px 15px;  /* Reduz o padding dos links */
         font-size: 15px;  /* Diminui o tamanho da fonte */
     }
-
-    /*imagem do logo*/
+	/*imagem do logo*/
 	#logo img{
 	display: block;
     width: 30%;
 	margin: 0;
 	}
 
-	#linkMenu {
-    color: #496B60;
-	font-size: 20px;
-	font-weight: bold;
-	text-decoration: none;
-	margin-bottom:15px;
-
-	}
 	h1{
 		font-size: 25;
 	}
@@ -356,6 +347,8 @@ img {
         padding: 10px 15px;  /* Reduz o padding dos links */
         font-size: 15px;  /* Diminui o tamanho da fonte */
     }
+
+
 	#linkMenu {
     color: #496B60;
 	font-size: 20px;
@@ -449,7 +442,7 @@ img {
         transform: scale(0.8); /* Reduz o tamanho */
     }
 	img {
-        width: 40%; /* A imagem ocupa toda a largura da moldura */
+        width: 60%; /* A imagem ocupa toda a largura da moldura */
         height: auto; /* Altura proporcional à largura */
         border-radius: 5px; /* Mantém as bordas arredondadas */
         display: block;
@@ -499,6 +492,5 @@ img {
     width: 1024px; /* Largura mínima de um desktop */
     height: 768px; /* Altura típica de um desktop */
 }
-
 
 
