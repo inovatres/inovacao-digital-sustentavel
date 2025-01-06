@@ -295,11 +295,11 @@ img {
 	.botaoEmail{
 	a {
 	text-decoration: none; /* Remove o sublinhado */
-}
+    }
 
 	a:hover {
 	text-decoration: underline; /* Adiciona sublinhado ao passar o mouse (opcional) */
-}
+    }
 
 	#botao_email {
 	background-color: #007BFF; /* Cor de fundo do botão */
@@ -309,11 +309,11 @@ img {
 	text-align: center; /* Alinha o texto */
 	display: inline-block; /* Para comportar como botão */
 	font-family: Courier; /* Fonte personalizada */
-}
+    }
 
 	#botao_email:hover {
 	background-color: #0056b3; /* Cor de fundo ao passar o mouse */
-}
+    }
 	}
 	#botao_email{
 	padding: 30px;
@@ -381,6 +381,25 @@ img {
         border-radius: 5px; /* Mantém as bordas arredondadas */
         display: block;
 		margin-left: 30px;
+    }
+
+    .texto-blog{
+
+    }
+    /*APLICA CORES DE FUNDO EM QUALQUER AREA APLICADA*/
+    #fundo-branco {
+        background: white;
+    }
+    #fundo-verde {
+        background: #18D62F;
+
+    }
+
+    /* Estilo específico para os elementos dentro do fundo verde */
+    #fundo-verde h4,
+    #fundo-verde p,
+    #fundo-verde strong {
+        color: #E3FFFE; /* Cor clara */
     }
 }
 
