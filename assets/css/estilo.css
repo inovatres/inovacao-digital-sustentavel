@@ -27,6 +27,11 @@ html {
     scroll-behavior: smooth;
 }
 
+/*imagem do logo*/
+#logo img{
+    width: 10%;
+}
+
 
 /* Estilos para o cabeçalho e navegação */
 header {
