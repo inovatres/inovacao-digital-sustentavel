@@ -233,6 +233,14 @@ img {
         padding: 10px 15px;  /* Reduz o padding dos links */
         font-size: 15px;  /* Diminui o tamanho da fonte */
     }
+
+    /*imagem do logo*/
+	#logo img{
+	display: block;
+    width: 30%;
+	margin: 0;
+	}
+
 	#linkMenu {
     color: #496B60;
 	font-size: 20px;
