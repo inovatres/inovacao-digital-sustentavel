@@ -209,7 +209,7 @@ img {
 #fundo-verde h4,
 #fundo-verde p,
 #fundo-verde strong {
-    color: #E3FFFE; /* Cor clara */
+    color: black; /* Cor clara */
 }
 
 .imagem-blog {
@@ -399,7 +399,7 @@ img {
     #fundo-verde h4,
     #fundo-verde p,
     #fundo-verde strong {
-        color: white; /* Cor clara */
+        color: black; /* Cor clara */
     }
 }
 
