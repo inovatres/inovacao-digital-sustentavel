@@ -219,6 +219,7 @@ img {
 
 }
 
+/*espaço entre as imagens em cima e embaixo*/
 .imagem-blog img{
 	margin-top: 10px;
     margin-bottom: 10px;
