@@ -216,6 +216,12 @@ img {
 	max-width: 100%;
 	align-content: center;
 	margin: 1%;
+
+}
+
+.imagem-blog img{
+	margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .botaoEmail a {
