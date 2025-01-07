@@ -332,8 +332,6 @@ img {
 	color: #496B60;
 	}
 
-	
-
 	.texto {
         font-size: 1.5rem; /* Reduz o tamanho do texto em dispositivos móveis */
 
@@ -407,6 +405,13 @@ img {
     #fundo-verde p,
     #fundo-verde strong {
         color: black; /* Cor clara */
+    }
+
+    .imagem-blog img{
+	width: 100%;
+	align-content: center;
+	margin: 1%;
+
     }
 }
 
