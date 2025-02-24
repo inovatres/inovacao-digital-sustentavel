@@ -470,7 +470,8 @@ img {
       margin-right: 5%; /* Espaço entre as imagens */
       animation: mover 10s linear infinite; /* Animação */
       border-radius: 5px;
-      box-shadow: 0px 0px 15px #15ddec;
+      box-shadow: 0px 0px 15px rgba(21, 221, 236, 0.2);
+
 
     }
     @keyframes mover {
@@ -484,7 +485,7 @@ img {
 
     .esteiraTamanho:hover img {
       animation-play-state: paused; /* Pausa a animação ao passar o mouse */
-      box-shadow: 3px 3px 5px #15ddec;
+      box-shadow: 3px 3px 5px rgba(21, 221, 236, 0.3);
     }
 }
 
@@ -587,6 +588,42 @@ img {
 		margin-left: 25%;
     }
 
+            /* ESTEIRA DE IMAGENS ANDANDO NA HORIZONTAL  */
+    .esteiraTamanho{
+        overflow: hidden; /* Esconde o que sai da tela */
+        width: 100%;
+         /*overflow: hidden; Esconde qualquer coisa fora do limite */
+        display: flex; /* deixa imagem em linha*/
+        margin-top: 20px;
+        box-shadow: inset 0 -20px 30px rgba(21, 221, 236, 0.2);
+
+
+    }
+
+    .esteiraTamanho img {
+      margin: 15px;
+      max-width: 8%; /* Ajuste o tamanho das imagens conforme necessário */
+      height: auto;
+      margin-right: 5%; /* Espaço entre as imagens */
+      animation: mover 10s linear infinite; /* Animação */
+      border-radius: 5px;
+      box-shadow: 0px 0px 15px rgba(21, 221, 236, 0.2);
+
+
+    }
+    @keyframes mover {
+      0% {
+        transform: translateX(0); /* Início: imagens começam na posição original */
+      }
+      100% {
+        transform: translateX(-300%); /* Fim: as imagens vão para a esquerda, saindo da tela */
+      }
+    }
+
+    .esteiraTamanho:hover img {
+      animation-play-state: paused; /* Pausa a animação ao passar o mouse */
+      box-shadow: 3px 3px 5px rgba(21, 221, 236, 0.3);
+    }
 
 }
 
