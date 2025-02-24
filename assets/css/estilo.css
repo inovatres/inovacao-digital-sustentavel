@@ -64,8 +64,8 @@ header {
 	color: white;
 	text-shadow: 2px 2px 3px #496B60;
 }
-#botaoPadrao {
-    width: 95%; /* Largura*/
+.botaoPadrao {
+    width: 60%; /* Largura*/
     height: 40px; /* Altura de 100% da altura da tela */
     padding: 10px;
     background-color: #4398e8;
@@ -80,9 +80,10 @@ header {
     text-align: center; /* Garante que o texto seja centralizado */
 	margin-top: 20px;
 	margin-bottom: 20px;
+	margin: auto;
 }
 
-#botaoPadrao:hover {
+.botaoPadrao:hover {
     color: #91EBCE;
 
 }
@@ -178,8 +179,7 @@ footer {
 }
 
 img {
-	width: 40%;
-	margin-left: 0%;
+    max-width: 60%;
 	border-radius: 5px;
 }
 
@@ -213,9 +213,11 @@ img {
 }
 
 .imagem-blog {
-	max-width: 100%;
-	align-content: center;
-	margin: 1%;
+    width: 50%;
+	margin: auto;
+	display; inline-block;
+
+
 
 }
 
